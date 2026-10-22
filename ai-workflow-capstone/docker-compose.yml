@@ -1,0 +1,9 @@
+services:
+  business-prediction-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      APP_LOG_PATH: /app/logs/app.log
+    volumes:
+      - ./logs:/app/logs
